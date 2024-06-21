@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Задание 15.1
+    </title>
+    <style>
+        h1{
+            transition: all 0.3s ease;
+        }
+    </style>
+    <script>
+        function colorchange(){
+            head.style.color = "red";
+        }
+        function colorreset(){
+            head.style.color = "";
+        }
+    </script>
+</head>
+    <body>
+    <h1 id="head" onmouseover="colorchange()" onmouseout="colorreset()">
+        Добро пожаловать на нашу страницу!
+    </h1>
+    </body>
+</html>
