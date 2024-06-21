@@ -1,0 +1,35 @@
+<head>
+    <title>
+        Задание 19.1
+    </title>
+    <script language="JavaScript">
+        let screenW = window.innerWidth;
+        let screenH = window.innerHeight;
+
+        function move() {
+            let x = parseInt(anim.style.left.match(/\d+/));
+            let y = parseInt(anim.style.top.match(/\d+/));
+
+            if (x >= (screenW / 2) && y <= (screenH / 2)) {
+                x -= 1;
+                y += 1;
+
+                anim.style.left = x + "px";
+                anim.style.top = y + "px";
+
+                setTimeout("move()", 50);
+            }
+        }
+
+        function rep() {
+            anim.style.left = (screenW - 150) + "px";
+            move();
+        }
+    </script>
+</head>
+<body onLoad="rep()">
+    <div id="anim" style="position:absolute; left:10; top:10">
+        Текст, шагом марш!
+    </div>
+</body>
+</html>
