@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Задание 18.1</title>
+    <script>
+        function mvt() {
+            let text = document.getElementById("anil");
+            let texttop = parseInt(text.style.top);
+
+            if (isNaN(texttop)){
+                texttop = 10;
+            }
+
+            let tp = 500;
+
+            if (texttop < tp) {
+                texttop += 1;
+                text.style.top = texttop + "px";
+                setTimeout("mvt()", 30);
+            }
+        }
+    </script>
+    <style>
+        #anil {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body onLoad="mvt()">
+    <div id="anil">Текст, шагом марш!</div>
+</body>
+</html>
