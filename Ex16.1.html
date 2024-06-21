@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Задание 16.1
+    </title>
+    <style>
+    </style>
+    <script>
+        function addUnderline() {
+            head.style.textDecoration = "underline";
+        }
+
+        function removeUnderline() {
+            head.style.textDecoration = "none";
+        }
+
+        function addOverline() {
+            head.style.textDecoration = "overline";
+        }
+
+        function addLineThrough() {
+            head.style.textDecoration = "line-through";
+        }
+    </script>
+</head>
+    <body>
+    <h1 id="head" 
+    onmouseover="addUnderline()" 
+    onmouseout="removeUnderline()"
+    onclick="addOverline()"
+    ondblclick="addLineThrough()">
+        Добро пожаловать на нашу страницу!
+    </h1>
+    </body>
+</html>
