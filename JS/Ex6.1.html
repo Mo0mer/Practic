@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Задание 6.1
+        </title>
+        <style>
+            table{
+                border: 1px solid blue;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+<body>
+    <script>
+            document.write("<table border='1'>");
+            document.write("<tr><th>Степень</th><th>Результат</th></th>");
+            
+        for (let i=0; i <= 7; i++){
+                document.write("<tr>");
+                document.write("<td align='center'>" + i + "</td>");
+                document.write("<td align='right'>" + Math.pow(2, i) + "</td>");
+        }
+    </script>
+</body>
+</html>

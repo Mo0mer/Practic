@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Задание 7.1
+        </title>
+        <style>
+            li{
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+            }
+        </style>
+        <script>
+            function task(){
+                let mass = ["Математика", "Физика", "Химия", 
+                            "Литература", "История", "Англисик",];
+                let scmass = mass.slice(0, 3);
+                let humass = mass.slice(3);
+
+                document.write("<h2>Точные науки:<h2>");
+                document.write("<ul>")
+                for (var i = 0; i < scmass.length; i++) {
+                    document.write("<li>" + scmass[i] + "</li>");
+                }
+                document.write("</ul>");
+                
+                document.write("<h2>Гуманитарные науки:</h2>");
+                document.write("<ul>");
+                for (var i = 0; i < humass.length; i++) {
+                    document.write("<li>" + humass[i] + "</li>");
+                }
+                document.write("</ul>");
+            }
+            
+        </script>
+    </head>
+<body>
+    <script>
+        task();
+    </script>
+</body>
+</html>
